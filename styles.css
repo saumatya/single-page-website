@@ -1,0 +1,83 @@
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10;
+        padding: 10;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 10;
+        right: 10;
+        width: 100%;
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        padding: 0.5rem 0;
+        z-index: 1000;
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      header nav a.active {
+        text-decoration: underline;
+        color: yellow;
+      }
+
+      section {
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 1rem 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        padding: 1rem;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px gray;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #contactForm {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+
+      @media (max-width: 768px) {
+        header nav a {
+          margin: 0 10px;
+          font-size: 0.9rem;
+        }
+      }
